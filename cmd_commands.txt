@@ -1,0 +1,4 @@
+pytest pytests\pytest_module_01.py
+
+-- verbose 
+pytest -v pytests\pytest_module_01.py

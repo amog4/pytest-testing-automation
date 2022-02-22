@@ -13,6 +13,10 @@ def test_fail():
     assert 5 - 5 == 2 , "failed test"
 
 
+def test_div():
+    assert 9//5 == 1 # division
+
 
 print(test_pass)
 print(test_fail)
+print(test_div)
