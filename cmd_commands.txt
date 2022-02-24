@@ -1,0 +1,15 @@
+pytest pytests\pytest_module_01.py
+
+-- verbose 
+pytest -v pytests\pytest_module_01.py
+
+pytest -v pytests\pytest_module_01.py::test_div
+
+-- using pytest cache
+https://docs.pytest.org/en/latest/how-to/cache.html#cache-working-with-cross-testrun-state
+
+-- running single test 
+pytest pytest_class.py -k TestAssert -k test_type
+
+-- print exception
+pytest pytest_raise_exception.py -s
