@@ -12,3 +12,4 @@ def test_a1():
 @pytest.mark.skipif(sys.version_info > (3,8),reason='skip')
 def test_a1():
     assert 4 != 3
+

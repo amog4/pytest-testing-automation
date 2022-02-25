@@ -13,3 +13,6 @@ pytest pytest_class.py -k TestAssert -k test_type
 
 -- print exception
 pytest pytest_raise_exception.py -sc
+
+-- run marker
+pytest pytest_markers.py  -m "sanity"
