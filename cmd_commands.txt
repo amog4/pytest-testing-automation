@@ -20,3 +20,6 @@ pytest pytest_markers.py  -m "sanity"
 -- show setup fixtures
 
 pytest pytest_fixture_conf.py --setup-show
+
+-- pass from cmd
+pytest pytest_argstest.py --cmdopt='QA'

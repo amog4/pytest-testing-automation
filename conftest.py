@@ -1,5 +1,8 @@
+from email.policy import default
 from urllib import request
-import pytest
+import pytest,os
+
+QA_config = 'qa.prop'
 
 def pytest_configure():
 
@@ -41,3 +44,14 @@ def setup4(name):
     return setup4
 
     
+
+#parsar
+
+def pytest_addoption(parser):
+    parser.addoption("--cmdopt",default='QA')
+
+@pytest.fixture()
+def CmdOpt(pytestconfig):
+    opt = pytestconfig.getoption('cmdopt')
+    f = open(os.path.join(os.path.dirname(__file__),QA_config), 'r')
+    yield f
