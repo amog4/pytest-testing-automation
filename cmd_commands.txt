@@ -16,3 +16,7 @@ pytest pytest_raise_exception.py -sc
 
 -- run marker
 pytest pytest_markers.py  -m "sanity"
+
+-- show setup fixtures
+
+pytest pytest_fixture_conf.py --setup-show
