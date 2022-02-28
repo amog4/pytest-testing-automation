@@ -18,3 +18,8 @@ def test_a5():
 print(test_a5)
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0c94b625d1c673e8802e521b743c1c825847edeb

@@ -12,4 +12,18 @@ https://docs.pytest.org/en/latest/how-to/cache.html#cache-working-with-cross-tes
 pytest pytest_class.py -k TestAssert -k test_type
 
 -- print exception
+<<<<<<< HEAD
 pytest pytest_raise_exception.py -s
+=======
+pytest pytest_raise_exception.py -sc
+
+-- run marker
+pytest pytest_markers.py  -m "sanity"
+
+-- show setup fixtures
+
+pytest pytest_fixture_conf.py --setup-show
+
+-- pass from cmd
+pytest pytest_argstest.py --cmdopt='QA'
+>>>>>>> 0c94b625d1c673e8802e521b743c1c825847edeb
